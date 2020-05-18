@@ -1,0 +1,62 @@
+header {
+    background-image: url(../img/header-bg.jpg);
+    padding-bottom: 160px;
+    background-position: center;
+    position: relative;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+
+}
+
+
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+ul.nav-menu a {
+    line-height: 61px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+
+} 
+
+ul.nav-menu li {
+    margin-right: 52px;
+}
+
+ul.nav-menu li:last-child {
+    margin-right: 0px;
+}
+
+
+.content {
+    display: flex;
+    
+}
+
+.slider {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    
+    background-color: rgba( 0, 0, 0, 0.2);
+    
+        
+      
+      
+}
+
+
