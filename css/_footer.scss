@@ -1,0 +1,33 @@
+footer {
+    background-color: #ececec;
+    .footer-content {
+        @include flexbox;
+        @include justify-content(space-around);
+        div {
+            width: 30%;
+            padding: 100px 0px 100px 0px;
+        }
+    }
+}
+
+.footer-nav {
+    background-image: url(../img/header-bg.jpg);
+    padding: 50px 0px 50px 0px;
+    .wrapper {
+        @include flexbox;
+        @include justify-content(space-around);
+        ul {
+            width: 60%;
+            @include flexbox;
+            @include justify-content(space-between);
+            a {
+                text-decoration: none;
+            }
+        }
+        div {
+            width: 30%;
+            text-align: right;
+        }
+       
+    }
+}

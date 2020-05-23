@@ -1,0 +1,129 @@
+$width_wrapper_full: 960px;
+$width_wrapper_medium: 728px;
+$width_wrapper_small: 440px;
+$width_wrapper_mobile: 280px;
+$none: none;
+
+header {
+    background-image: url(../img/header-bg.jpg);
+    padding-bottom: 340px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.wrapper {
+    width: $width_wrapper_full;
+    margin: 0 auto;
+    
+
+}
+
+
+
+.nav-menu {
+    @include flexbox;
+    list-style-type: $none;
+    
+}
+
+.header-menu {
+    @include flexbox;
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+    
+}
+
+.slider-img {
+    position: relative;
+    top: -20px;
+}
+
+.nav-menu {
+    a {
+    line-height: 61px;
+    height: 61px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: $none;
+
+        &:hover {
+            border-bottom: 2px solid pink;
+            box-sizing: border-box;
+        }
+
+    }
+
+    li {
+    margin-right: 52px;
+    height: 61px;
+    box-sizing: border-box;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.content {
+    @include flexbox;
+    position: relative;
+    
+}
+
+.content:after {
+    content: "";
+    background-image: url(../img/slider-left.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 200px;
+    left: -100px;
+    width: 35px;
+    height: 35px;
+
+}
+.content:before {
+    content: "";
+    background-image: url(../img/slider-right.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -100px;
+    top: 200px;
+    width: 35px;
+    height: 35px;
+
+}
+
+.slider {
+    position: relative;
+    top: 170px;
+    width: 100%;
+    
+    background-color: rgba( 0, 0, 0, 0.2);
+    
+        
+      
+      
+}
+.scroll {
+    @include flexbox;
+    @include justify-content(center);
+    position: absolute;
+    top: 120%;
+    width: 250px;
+    left: 50%;
+    margin-left: -125px;
+}
+.scroll-item {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.3;
+    margin: 0 5px 0 5px;
+        &:hover {
+            background-color: white;
+            opacity: 0.7;
+            margin: 0 5px 0 5px;
+        }
+}
